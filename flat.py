@@ -47,7 +47,7 @@ def search_offer(links_list):
             continue
         elif compare_db:
             sys.exit()
-        sec = random.uniform(15, 35)
+        sec = random.uniform(1, 3)
         print(f'Wait: {sec}')
         time.sleep(sec)
         adv_text, l_soup = soup_find(link, tag='div', class_html='css-g5mtbi-Text', f_all=False)
